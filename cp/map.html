@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <title>Reverse Geocoding</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
+    <link rel="stylesheet" type="text/css" href="./map.css" />
+    <script type="module" src="./map.js"></script>
+  </head>
+  <body>
+    <!-- header of web -->
+    <div id="header">
+      <ul>
+          <li>
+              <img src="img\HCMUTE_SCHOOL_4.png" width="1000" height="200">
+          </li>
+      </ul>
+      <ul>
+          <li>
+              <center>ĐỒ ÁN TỐT NGHIỆP</center>
+          </li>
+          
+      </ul>
+      <ul>
+          <li>
+              <center>ĐỀ TÀI:</center>
+          </li>
+          
+      </ul>
+      <ul>
+          <li>
+              <center style="color:rgb(17, 0, 255)"> THIẾT KẾ VÀ THI CÔNG THIẾT BỊ TÌM KIẾM TRONG TRƯỜNG HỢP KHẨN CẤP 
+                  </center>
+          </li>
+          
+      </ul>
+      
+    </div>
+    <div id="floating-panel">
+      <input id="latlng" type="text" value="10.850788, 106.772574" />
+      <input id="submit" type="button" value="Reverse Geocode" />
+    </div>
+    <div id="map"></div>
+
+    <!-- 
+      The `defer` attribute causes the callback to execute after the full HTML
+      document has been parsed. For non-blocking uses, avoiding race conditions,
+      and consistent behavior across browsers, consider loading using Promises.
+      See https://developers.google.com/maps/documentation/javascript/load-maps-js-api
+      for more information.
+      -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcGtWgz7yu0C9kFZs0UqR4aD7CwAC2twk&callback=initMap&v=weekly"
+      defer
+    ></script>
+  </body>
+  <!-- footer of web -->
+  <footer>
+    <!-- table to display information -->
+    <table id="table">
+        <tr>
+            <th style="width:50%"><a href="https://www.facebook.com/profile.php?id=100004243969370">Dương Kiến Bảo</a></th>
+            <th style="width:50%"><a href="https://www.facebook.com/feliks1612/">Trần Minh Huy</a></th>           
+        </tr>
+
+        <tr>
+            <th>19161079</th>
+            <th>19161007</th>           
+        </tr>
+    </table>
+
+    <!-- contact information -->
+    <center>
+        <img id="denId_01" class="card-img-top" src="./img/light_off.png" alt="Card image" style="width:20%">
+        <h4>Contact: 039 5755 020 </h4>
+        <h4>Email: doantotnghiep@gmail.com </h4>
+        <h4>Address: 1, Vo Van Ngan, Thu Duc City, HCM City </h4>
+    </center>
+
+  </footer>
+</html>
